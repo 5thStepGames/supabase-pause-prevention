@@ -15,7 +15,8 @@ export const keepAliveConfig = {
   sizeBeforeDeletions: 10, // Max size of table before any deletions start (if allowInsertionAndDeletion is true)
 
   consoleLogOnError: true,
-
+  supabaseUrl: process.env.SUPABASE_URL,
+  supabaseKey: process.env.SUPABASE_KEY,
   otherEndpoints: [
     'https://your-other-vercel-project-urls.vercel.app/api/keep-alive',
     'https://your-other-supabase-app.com/api/keep-alive',
